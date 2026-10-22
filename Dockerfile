@@ -12,12 +12,10 @@ COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 ENV NEXT_TELEMETRY_DISABLED=1
-
-ARG NEXT_PUBLIC_API_BASE=/api/v1
-ARG NEXT_PUBLIC_SOCKET_URL=
-
-ENV NEXT_PUBLIC_API_BASE=$NEXT_PUBLIC_API_BASE
-ENV NEXT_PUBLIC_SOCKET_URL=$NEXT_PUBLIC_SOCKET_URL
+ENV NEXT_PUBLIC_API_BASE=/api/v1
+ENV NEXT_PUBLIC_SOCKET_URL=https://norcaltrucktrade-backend-tcczor-864aff-169-58-206-96.sslip.io
+ENV SOCKET_PUBLIC_URL=https://norcaltrucktrade-backend-tcczor-864aff-169-58-206-96.sslip.io
+ENV BACKEND_ORIGIN=https://norcaltrucktrade-backend-tcczor-864aff-169-58-206-96.sslip.io
 
 RUN npm run build
 
@@ -28,9 +26,8 @@ ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV PORT=3000
 ENV HOSTNAME=0.0.0.0
-
-ARG BACKEND_ORIGIN=http://127.0.0.1:5000
-ENV BACKEND_ORIGIN=$BACKEND_ORIGIN
+ENV BACKEND_ORIGIN=https://norcaltrucktrade-backend-tcczor-864aff-169-58-206-96.sslip.io
+ENV SOCKET_PUBLIC_URL=https://norcaltrucktrade-backend-tcczor-864aff-169-58-206-96.sslip.io
 
 RUN addgroup --system --gid 1001 nodejs \
   && adduser --system --uid 1001 nextjs
