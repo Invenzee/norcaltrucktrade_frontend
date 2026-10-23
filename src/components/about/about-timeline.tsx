@@ -30,7 +30,7 @@ const MILESTONES = [
   {
     year: "2026",
     title: "Expanding Our Horizons",
-    body: "This year, we reached another milestone by opening our newest branch and partnering with local businesses to offer unique travel experiences across Southern California.",
+    body: "This year, we reached another milestone by opening our newest branch and partnering with local businesses to offer unique travel experiences across Northern California.",
     yearSide: "right" as const,
   },
 ] as const;

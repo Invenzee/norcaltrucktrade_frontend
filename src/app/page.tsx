@@ -511,14 +511,14 @@ export default function Home() {
             ref={headingRef}
             className="w-full min-w-0 font-heading uppercase leading-[1.08] tracking-[0.04em] text-white text-[clamp(1.45rem,4.8vw,3.35rem)] [text-shadow:0_2px_18px_rgba(0,0,0,0.9),0_1px_2px_rgba(0,0,0,0.95)]"
           >
-            Buy &amp; Sell Trucks Across Southern California
+            Buy &amp; Sell Trucks Across Northern California
           </h1>
 
           <p
             ref={bodyRef}
             className="mt-5 w-full min-w-0 max-w-[40rem] text-sm font-normal leading-relaxed text-white sm:mt-6 sm:text-base [text-shadow:0_2px_14px_rgba(0,0,0,0.95),0_1px_2px_rgba(0,0,0,0.9)]"
           >
-            NorCalTruckTrade is Southern California&apos;s truck-only marketplace.
+            NorCalTruckTrade is Northern California&apos;s truck-only marketplace.
             Browse listings from local sellers, chat with them directly, or list
             your own truck in minutes. From semis to pickups, we make buying and
             selling simple.
@@ -827,7 +827,7 @@ export default function Home() {
               id="areas-served-heading"
               className="font-heading uppercase leading-[1.1] tracking-[0.04em] text-black text-[clamp(1.75rem,6vw,50px)]"
             >
-              <span className="block">Serving Southern</span>
+              <span className="block">Serving Northern</span>
               <span className="block">
                 California and{" "}
                 <span className="text-brand">Nearby States</span>

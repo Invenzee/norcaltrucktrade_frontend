@@ -105,7 +105,7 @@ export default function ReadyToListings() {
           className="mt-5 max-w-2xl text-sm leading-relaxed text-black/65 sm:mt-6 sm:text-base"
         >
           Join NorCalTruckTrade and connect with truck buyers and sellers across
-          Southern California. Have a question first? Our team is happy to help.
+          Northern California. Have a question first? Our team is happy to help.
         </p>
         <div
           data-ready-item
