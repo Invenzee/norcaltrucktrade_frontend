@@ -96,8 +96,8 @@ export default function Footer() {
 
   return (
     <footer ref={footerRef} className="bg-black text-white">
-      <div className="container-site py-14 sm:py-16 lg:py-20">
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-10">
+      <div className="container-site py-8 sm:py-10">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
           <div data-footer-col className="max-w-sm">
             <Link href="/" className="inline-block">
               <Image
@@ -105,16 +105,16 @@ export default function Footer() {
                 alt="NorCal Truck Trade"
                 width={120}
                 height={140}
-                className="h-auto w-[88px] object-contain sm:w-[100px]"
+                className="h-auto w-[80px] object-contain sm:w-[88px]"
               />
             </Link>
-            <p className="mt-5 text-sm leading-relaxed text-white/70">
+            <p className="mt-3 text-sm leading-snug text-white/70">
               NorCalTruckTrade is a truck-only marketplace based in Anaheim,
               California. Buy or sell semis, box trucks and pickups, and connect
               directly with buyers and sellers across California and nearby
               states.
             </p>
-            <div className="mt-6 flex items-center gap-3">
+            <div className="mt-4 flex items-center gap-2.5">
               {SOCIALS.map(({ href, label, icon: Icon, className }) => (
                 <a
                   key={label}
@@ -131,15 +131,15 @@ export default function Footer() {
           </div>
 
           <div data-footer-col>
-            <h3 className="text-base font-semibold text-white sm:text-lg">
+            <h3 className="text-sm font-semibold text-white sm:text-base">
               Sitemap
             </h3>
-            <ul className="mt-4 flex flex-col gap-3">
+            <ul className="mt-2.5 flex flex-col gap-2">
               {SITEMAP.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-white/75 transition-colors hover:text-white sm:text-base"
+                    className="text-sm text-white/75 transition-colors hover:text-white"
                   >
                     {item.label}
                   </Link>
@@ -149,15 +149,15 @@ export default function Footer() {
           </div>
 
           <div data-footer-col>
-            <h3 className="text-base font-semibold text-white sm:text-lg">
+            <h3 className="text-sm font-semibold text-white sm:text-base">
               Contact
             </h3>
-            <ul className="mt-4 flex flex-col gap-3">
+            <ul className="mt-2.5 flex flex-col gap-2">
               {CONTACT.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="text-sm text-white/75 transition-colors hover:text-white sm:text-base"
+                    className="text-sm text-white/75 transition-colors hover:text-white"
                     {...(item.href.startsWith("http")
                       ? { target: "_blank", rel: "noopener noreferrer" }
                       : {})}
@@ -172,16 +172,33 @@ export default function Footer() {
 
         <div
           data-footer-bottom
-          className="mt-12 border-t border-white/15 pt-6 text-center sm:mt-14"
+          className="mt-5 flex flex-col items-center gap-x-3 gap-y-2 border-t border-white/15 pt-2.5 text-center text-[10px] sm:mt-6 sm:flex-row sm:flex-nowrap sm:gap-x-4 sm:text-left sm:text-xs"
         >
-          <p className="text-xs text-white/60 sm:text-sm">
+          <p className="shrink-0 text-white/45">
             ©Copyright 2026 Norcal All rights reserved.
           </p>
-          <p className="mt-3 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs sm:text-sm">
-            <Link href="/privacy" className="text-white/75 transition-colors hover:text-white">
+          <p className="min-w-0 text-center text-white/55 sm:flex-1">
+            Design and develop by{" "}
+            <a
+              href="https://www.techcole.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-brand-red transition-colors hover:text-brand-red/85 hover:underline"
+            >
+              Techcole
+            </a>
+          </p>
+          <p className="flex shrink-0 items-center gap-x-2.5 text-white/75 sm:gap-x-3">
+            <Link
+              href="/privacy"
+              className="transition-colors hover:text-white"
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-white/75 transition-colors hover:text-white">
+            <span className="text-white/25" aria-hidden>
+              |
+            </span>
+            <Link href="/terms" className="transition-colors hover:text-white">
               Terms and Conditions
             </Link>
           </p>

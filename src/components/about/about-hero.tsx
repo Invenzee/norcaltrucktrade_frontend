@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef } from "react";
-import Image from "next/image";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -67,7 +66,11 @@ export default function AboutHero() {
         className="relative w-full h-full overflow-hidden bg-neutral-200"
       >
         <div className="relative w-full h-full">
-          <img src="/about-hero.webp" alt="Green, silver, and black Chevrolet pickups parked on a mountain overlook" className="object-contain w-full h-full relative" /> 
+          <img
+            src="/about-hero.webp"
+            alt="Green, silver, and black Chevrolet pickups parked on a mountain overlook"
+            className="relative h-full w-full object-contain"
+          />
         </div>
       </div>
     </section>

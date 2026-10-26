@@ -150,24 +150,24 @@ export default function AboutTimeline() {
         />
 
         <div className="pointer-events-none absolute left-[4%] top-[30%] z-0 hidden size-36 -translate-y-1/2 -rotate-45 overflow-hidden border-[6px] border-brand bg-neutral-200 lg:block xl:size-44">
-          <div className="relative flex size-full items-center justify-center overflow-hidden">
+          <div className="relative size-full rotate-45 scale-[1.45]">
             <Image
-              src="/timeline-gmc-sierra.webp"
+              src="/about-intro-gmc-sierra-at4.jpg"
               alt=""
-              width={176}
-              height={176}
-              className="size-[165%] max-w-none origin-center -rotate-[-45deg] object-cover"
+              fill
+              sizes="(max-width: 1280px) 144px, 176px"
+              className="object-cover object-[center_42%]"
             />
           </div>
         </div>
 
         <div className="pointer-events-none absolute bottom-[10%] right-[6%] z-0 hidden h-36 w-56 overflow-hidden bg-neutral-200 lg:block xl:h-44 xl:w-72">
           <Image
-            src="/timeline-toyota-tacoma.avif"
+            src="/about-hero-ram-trx.png"
             alt=""
             width={288}
             height={176}
-            className="size-full object-cover object-center"
+            className="size-full object-cover object-[center_55%]"
           />
         </div>
 

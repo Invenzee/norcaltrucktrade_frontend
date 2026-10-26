@@ -32,22 +32,22 @@ const SHOP_BY_BRAND_CATEGORIES = [
     title: "Heavy-Duty & Semi Trucks",
     description:
       "Freightliner, Peterbilt, Kenworth, Volvo, Mack, International and Western Star trucks for long-haul, regional and vocational work.",
-    imageSrc: "/shop-brand-heavy-duty-3.webp",
-    imageAlt: "White Ram 1500 Big Horn crew cab pickup",
+    imageSrc: "/home-sell-ram-2500.jpg",
+    imageAlt: "Black Ram 2500 heavy-duty pickup in desert terrain",
   },
   {
     title: "Medium-Duty & Commercial Trucks",
     description:
       "Hino and Isuzu trucks for local delivery, box truck routes and light commercial jobs.",
-    imageSrc: "/shop-brand-medium-duty-3.webp",
-    imageAlt: "Gray Ford F-150 crew cab pickup",
+    imageSrc: "/home-hero-ford-f150-platinum.png",
+    imageAlt: "Red Ford F-150 Platinum pickup on a coastal road",
   },
   {
     title: "Pickup Trucks",
     description:
       "Ford, Ram, Chevrolet, GMC, Toyota and Nissan pickups for work sites, towing and everyday driving.",
-    imageSrc: "/shop-brand-pickup-4.webp",
-    imageAlt: "Blue Ford F-150 Raptor pickup on a dirt road",
+    imageSrc: "/home-shop-ram-trx.png",
+    imageAlt: "Gray Ram TRX pickup in the desert at sunset",
   },
 ] as const;
 
@@ -587,8 +587,8 @@ export default function Home() {
           >
             <div className="overflow-hidden rounded-lg border-b-[3px] border-brand-red">
               <Image
-                src="/move-what-matters-2.webp"
-                alt="Red Ford pickup parked on a road in the snow"
+                src="/home-move-gmc-sierra.jpg"
+                alt="White GMC Sierra pickup driving across a bridge"
                 width={1596}
                 height={772}
                 sizes="(max-width: 1140px) calc(100vw - 2rem), 1140px"
@@ -608,8 +608,8 @@ export default function Home() {
           className="absolute inset-x-0 -top-[10%] h-[120%] w-full will-change-transform"
         >
           <Image
-            src="/need-to-sell-2.webp"
-            alt="Orange Nissan Titan pickup parked by an industrial building"
+            src="/home-sell-ram-2500.jpg"
+            alt="Black Ram 2500 pickup in the desert at golden hour"
             fill
             sizes="100vw"
             className="object-cover object-[center_right]"

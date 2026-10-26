@@ -43,8 +43,8 @@ export default function LoginForm() {
   return (
     <AuthShell
       title="Login"
-      backgroundSrc="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=2000&q=80"
-      backgroundAlt="Car background"
+      backgroundSrc="/auth-truck-background.jpg"
+      backgroundAlt="Nissan Titan pickup in the desert at golden hour"
       footer={
         <>
           Don&apos;t have an account?{" "}
